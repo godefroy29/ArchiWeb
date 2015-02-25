@@ -20,5 +20,10 @@ class DefaultController extends Controller
     {
         return $this->render('firstBundle:Default:event.html.twig');
     }
+
+    public function infosAction()
+    {
+        return $this->render('firstBundle:Default:infos.html.twig');
+    }
 }
   

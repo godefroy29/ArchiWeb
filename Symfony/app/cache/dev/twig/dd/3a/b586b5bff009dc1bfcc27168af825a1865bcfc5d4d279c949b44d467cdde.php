@@ -66,14 +66,42 @@ class __TwigTemplate_dd3ab586b5bff009dc1bfcc27168af825a1865bcfc5d4d279c949b44d46
     public function block_body($context, array $blocks = array())
     {
         // line 16
-        echo "<h1>A compléter</h1>
+        echo "<div class=\"bs-docs-section\">
+<div class=\"container\">
+        <div class=\"row\">
+          <div class=\"col-lg-4\">
+            <h2 id=\"nav-tabs\">AsiLoL</h2>
+            <div class=\"bs-component\">
+              <ul class=\"nav nav-tabs\">
+                <li class=\"active\"><a href=\"#quezako\" data-toggle=\"tab\">Quezako ?</a></li>
+                <li><a href=\"#lot\" data-toggle=\"tab\">Les lots à gagner !</a></li>
+                <li class=\"disabled\"><a>Inscription</a></li>
+                <!--<li class=\"disabled\"><a href=\"#linscription\" data-toggle=\"tab\">Inscription</a></li>-->
+              </ul>
+              <div id=\"myTabContent\" class=\"tab-content\">
+                <div class=\"tab-pane fade active in\" id=\"quezako\">
+                  <p>L'AsiLoL est un tournoi universitaire de League Of Legends organisé dans la ville du Mans.</p>
+                </div>
+                <div class=\"tab-pane fade\" id=\"lot\">
+                  <p>Cooming soon !</p>
+                </div>
+                <div class=\"tab-pane fade\" id=\"inscription\">
+                  <p>http://goo.gl/forms/MR4aYMGdFv</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+    </div>
+</div>
+
 ";
     }
 
-    // line 19
+    // line 47
     public function block_footer($context, array $blocks = array())
     {
-        // line 20
+        // line 48
         $this->displayParentBlock("footer", $context, $blocks);
         echo "
 ";
@@ -91,6 +119,6 @@ class __TwigTemplate_dd3ab586b5bff009dc1bfcc27168af825a1865bcfc5d4d279c949b44d46
 
     public function getDebugInfo()
     {
-        return array (  77 => 20,  74 => 19,  69 => 16,  66 => 15,  60 => 12,  57 => 11,  51 => 8,  48 => 7,  43 => 4,  40 => 3,  11 => 1,);
+        return array (  105 => 48,  102 => 47,  69 => 16,  66 => 15,  60 => 12,  57 => 11,  51 => 8,  48 => 7,  43 => 4,  40 => 3,  11 => 1,);
     }
 }

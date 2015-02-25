@@ -9,3 +9,7 @@ first_contact:
 first_event:
     path:     /event
     defaults: { _controller: firstBundle:Default:event }
+
+first_infos:
+    path:     /infos
+    defaults: { _controller: firstBundle:Default:infos }

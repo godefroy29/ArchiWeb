@@ -27,22 +27,22 @@ class __TwigTemplate_3c1687434b416bdeee113aa533cc2d0bdff443d81ddfa804e435e56e87d
 ";
         // line 4
         $this->displayBlock('head', $context, $blocks);
-        // line 38
+        // line 41
         echo "
 ";
-        // line 39
+        // line 42
         $this->displayBlock('navbar', $context, $blocks);
-        // line 73
-        echo "
-";
-        // line 74
-        $this->displayBlock('body', $context, $blocks);
-        // line 76
-        echo "
-";
         // line 77
+        echo "
+";
+        // line 78
+        $this->displayBlock('body', $context, $blocks);
+        // line 80
+        echo "
+";
+        // line 81
         $this->displayBlock('footer', $context, $blocks);
-        // line 84
+        // line 90
         echo "
 
 
@@ -87,6 +87,25 @@ class __TwigTemplate_3c1687434b416bdeee113aa533cc2d0bdff443d81ddfa804e435e56e87d
         }
         unset($context["asset_url"]);
         // line 16
+        echo "  ";
+        if (isset($context['assetic']['debug']) && $context['assetic']['debug']) {
+            // asset "2c43aec_0"
+            $context["asset_url"] = isset($context['assetic']['use_controller']) && $context['assetic']['use_controller'] ? $this->env->getExtension('routing')->getPath("_assetic_2c43aec_0") : $this->env->getExtension('assets')->getAssetUrl("_controller/js/2c43aec_bootstrap_1.js");
+            // line 17
+            echo "      <script type=\"text/javascript\" src=\"";
+            echo twig_escape_filter($this->env, (isset($context["asset_url"]) ? $context["asset_url"] : $this->getContext($context, "asset_url")), "html", null, true);
+            echo "\" async defer />
+  ";
+        } else {
+            // asset "2c43aec"
+            $context["asset_url"] = isset($context['assetic']['use_controller']) && $context['assetic']['use_controller'] ? $this->env->getExtension('routing')->getPath("_assetic_2c43aec") : $this->env->getExtension('assets')->getAssetUrl("_controller/js/2c43aec.js");
+            echo "      <script type=\"text/javascript\" src=\"";
+            echo twig_escape_filter($this->env, (isset($context["asset_url"]) ? $context["asset_url"] : $this->getContext($context, "asset_url")), "html", null, true);
+            echo "\" async defer />
+  ";
+        }
+        unset($context["asset_url"]);
+        // line 19
         echo "\t    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
 \t    <!--[if lt IE 9]>
 \t      <script src=\"../bower_components/html5shiv/dist/html5shiv.js\"></script>
@@ -119,10 +138,10 @@ class __TwigTemplate_3c1687434b416bdeee113aa533cc2d0bdff443d81ddfa804e435e56e87d
       ";
     }
 
-    // line 39
+    // line 42
     public function block_navbar($context, array $blocks = array())
     {
-        // line 40
+        // line 43
         echo "    <div class=\"container\">
       <div class=\"bs-docs-section clearfix\">
         <div class=\"row\">
@@ -146,6 +165,7 @@ class __TwigTemplate_3c1687434b416bdeee113aa533cc2d0bdff443d81ddfa804e435e56e87d
                     <ul class=\"nav navbar-nav\">
                       <li><a href=\"event\">Evenement</a></li>
                       <li><a href=\"contact\">Contact</a></li>
+                      <li><a href=\"infos\">Infos</a></li>
                     </ul>
                   </div>
                 </div>
@@ -158,18 +178,20 @@ class __TwigTemplate_3c1687434b416bdeee113aa533cc2d0bdff443d81ddfa804e435e56e87d
 ";
     }
 
-    // line 74
+    // line 78
     public function block_body($context, array $blocks = array())
     {
     }
 
-    // line 77
+    // line 81
     public function block_footer($context, array $blocks = array())
     {
-        // line 78
-        echo "\t<div class=\"container\">
+        // line 82
+        echo "<hr>
+\t<div class=\"container\" id=\"footer\">
 \t      <footer>
-\t\tfooter
+        
+\t\t      &copy; Godefroy Poirier & Kévin Demaret
 \t      </footer>
 \t</div>
 ";
@@ -182,6 +204,6 @@ class __TwigTemplate_3c1687434b416bdeee113aa533cc2d0bdff443d81ddfa804e435e56e87d
 
     public function getDebugInfo()
     {
-        return array (  170 => 78,  167 => 77,  162 => 74,  126 => 40,  123 => 39,  118 => 8,  115 => 7,  90 => 16,  76 => 14,  72 => 13,  67 => 10,  65 => 7,  61 => 5,  58 => 4,  46 => 84,  44 => 77,  41 => 76,  39 => 74,  36 => 73,  34 => 39,  31 => 38,  29 => 4,  24 => 1,);
+        return array (  190 => 82,  187 => 81,  182 => 78,  145 => 43,  142 => 42,  137 => 8,  134 => 7,  109 => 19,  95 => 17,  90 => 16,  76 => 14,  72 => 13,  67 => 10,  65 => 7,  61 => 5,  58 => 4,  46 => 90,  44 => 81,  41 => 80,  39 => 78,  36 => 77,  34 => 42,  31 => 41,  29 => 4,  24 => 1,);
     }
 }

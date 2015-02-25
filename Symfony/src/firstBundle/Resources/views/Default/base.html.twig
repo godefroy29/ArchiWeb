@@ -13,6 +13,9 @@
 	{% stylesheets '@firstBundle/Resources/public/css/bootstrap.css' %}
 	    <link rel="stylesheet" href="{{ asset_url }}" media="screen">
 	{% endstylesheets %}
+  {% javascripts '@firstBundle/Resources/public/js/bootstrap.js' %}
+      <script type="text/javascript" src="{{ asset_url }}" async defer />
+  {% endjavascripts %}
 	    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
 	    <!--[if lt IE 9]>
 	      <script src="../bower_components/html5shiv/dist/html5shiv.js"></script>
@@ -60,6 +63,7 @@
                     <ul class="nav navbar-nav">
                       <li><a href="event">Evenement</a></li>
                       <li><a href="contact">Contact</a></li>
+                      <li><a href="infos">Infos</a></li>
                     </ul>
                   </div>
                 </div>
@@ -75,9 +79,11 @@
 {% endblock %}
 
 {% block footer%}
-	<div class="container">
+<hr>
+	<div class="container" id="footer">
 	      <footer>
-		footer
+        
+		      &copy; Godefroy Poirier & Kévin Demaret
 	      </footer>
 	</div>
 {% endblock %}

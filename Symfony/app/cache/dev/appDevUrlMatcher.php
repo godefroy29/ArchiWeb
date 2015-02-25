@@ -40,6 +40,19 @@ class appDevUrlMatcher extends Symfony\Bundle\FrameworkBundle\Routing\Redirectab
 
         }
 
+        if (0 === strpos($pathinfo, '/js/2c43aec')) {
+            // _assetic_2c43aec
+            if ($pathinfo === '/js/2c43aec.js') {
+                return array (  '_controller' => 'assetic.controller:render',  'name' => '2c43aec',  'pos' => NULL,  '_format' => 'js',  '_route' => '_assetic_2c43aec',);
+            }
+
+            // _assetic_2c43aec_0
+            if ($pathinfo === '/js/2c43aec_bootstrap_1.js') {
+                return array (  '_controller' => 'assetic.controller:render',  'name' => '2c43aec',  'pos' => 0,  '_format' => 'js',  '_route' => '_assetic_2c43aec_0',);
+            }
+
+        }
+
         if (0 === strpos($pathinfo, '/_')) {
             // _wdt
             if (0 === strpos($pathinfo, '/_wdt') && preg_match('#^/_wdt/(?P<token>[^/]++)$#s', $pathinfo, $matches)) {
@@ -157,6 +170,11 @@ class appDevUrlMatcher extends Symfony\Bundle\FrameworkBundle\Routing\Redirectab
         // first_event
         if ($pathinfo === '/event') {
             return array (  '_controller' => 'firstBundle\\Controller\\DefaultController::eventAction',  '_route' => 'first_event',);
+        }
+
+        // first_infos
+        if ($pathinfo === '/infos') {
+            return array (  '_controller' => 'firstBundle\\Controller\\DefaultController::infosAction',  '_route' => 'first_infos',);
         }
 
         // plop_homepage
