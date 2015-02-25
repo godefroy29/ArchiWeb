@@ -19,7 +19,10 @@ class __TwigTemplate_aec7392dd867413fb3a2a41ce1976b47b600ed690cde9431dad71efa00c
 
         $this->blocks = array(
             'title' => array($this, 'block_title'),
-            'content' => array($this, 'block_content'),
+            'head' => array($this, 'block_head'),
+            'navbar' => array($this, 'block_navbar'),
+            'body' => array($this, 'block_body'),
+            'footer' => array($this, 'block_footer'),
         );
     }
 
@@ -37,15 +40,42 @@ class __TwigTemplate_aec7392dd867413fb3a2a41ce1976b47b600ed690cde9431dad71efa00c
     public function block_title($context, array $blocks = array())
     {
         // line 4
-        echo "\t<h1>Première Page</h1>
+        echo "\t<title>Accueil</title>
 ";
     }
 
     // line 7
-    public function block_content($context, array $blocks = array())
+    public function block_head($context, array $blocks = array())
     {
         // line 8
-        echo "\t<h3>Content</h3>
+        $this->displayParentBlock("head", $context, $blocks);
+        echo "
+";
+    }
+
+    // line 11
+    public function block_navbar($context, array $blocks = array())
+    {
+        // line 12
+        $this->displayParentBlock("navbar", $context, $blocks);
+        echo "
+";
+    }
+
+    // line 15
+    public function block_body($context, array $blocks = array())
+    {
+        // line 16
+        echo "<h1>A compléter</h1>
+";
+    }
+
+    // line 19
+    public function block_footer($context, array $blocks = array())
+    {
+        // line 20
+        $this->displayParentBlock("footer", $context, $blocks);
+        echo "
 ";
     }
 
@@ -61,6 +91,6 @@ class __TwigTemplate_aec7392dd867413fb3a2a41ce1976b47b600ed690cde9431dad71efa00c
 
     public function getDebugInfo()
     {
-        return array (  48 => 8,  45 => 7,  40 => 4,  37 => 3,  11 => 1,);
+        return array (  77 => 20,  74 => 19,  69 => 16,  66 => 15,  60 => 12,  57 => 11,  51 => 8,  48 => 7,  43 => 4,  40 => 3,  11 => 1,);
     }
 }

@@ -1,0 +1,60 @@
+{% extends 'firstBundle:Default:base.html.twig' %}
+
+{% block title %}
+	<title>Contact</title>
+{% endblock %}
+
+{% block head %}
+{{ parent() }}
+{% endblock %}
+
+{% block navbar %}
+{{ parent() }}
+{% endblock %}
+
+
+    
+{% block body %}
+        <div class="container">
+        <h2>Contact</h1>
+    	<h3>Par mail</h2>
+	        <div class="bs-docs-section">
+	            <form class="form-horizontal">
+	                <div class="row">
+	                    <div class="col-md-4">
+	                      <div class="form-group">
+	                        <label for="title" class="required">Votre email</label>
+	                        <input type="email" class="form-control" id="title" placeholder="Votre email" required>
+	                      </div>
+	                    </div>
+	                    <div class="col-md-1">
+	                    </div>
+	                    <div class="col-md-7">
+	                      <div class="form-group">
+	                        <label for="subject" class="required">Sujet</label>
+	                        <input type="text" class="form-control" id="subject" placeholder="Sujet du message" required>
+	                      </div>
+	                    </div>
+	                </div>
+	                <div class="row">
+	                    <div class="col-md-12">
+	                        <div class="form-group">
+
+	                          <label for="body" class="required">Message</label>
+	                          <textarea class="form-control" rows="3" id="body" placeholder="Message" required></textarea>
+
+	                        </div>
+	                    </div>
+	                </div>
+	                <div class="col-lg-10 col-lg-offset-2">
+                      <button type="reset" class="btn btn-default">Cancel</button>
+                      <button type="submit" class="btn btn-primary">Submit</button>
+                    </div>
+	            </form>
+	        </div>
+        </div>
+{% endblock %}
+
+{% block footer %}
+{{ parent() }}
+{% endblock %}

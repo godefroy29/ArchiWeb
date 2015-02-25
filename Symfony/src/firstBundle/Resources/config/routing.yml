@@ -1,9 +1,11 @@
 first_homepage:
-    path:     /first
+    path:     /
     defaults: { _controller: firstBundle:Default:index }
 
-first_page1:
-    path:     /page1
-    defaults: { _controller: firstBundle:Default:plop }
+first_contact:
+    path:     /contact
+    defaults: { _controller: firstBundle:Default:contact }
 
-
+first_event:
+    path:     /event
+    defaults: { _controller: firstBundle:Default:event }

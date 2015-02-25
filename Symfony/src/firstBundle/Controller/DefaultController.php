@@ -11,8 +11,14 @@ class DefaultController extends Controller
         return $this->render('firstBundle:Default:index.html.twig');
     }
 
-    public function page1Action()
+    public function contactAction()
     {
-        return $this->render('firstBundle:Default:plop.html.twig');
+        return $this->render('firstBundle:Default:contact.html.twig');
+    }
+
+    public function eventAction()
+    {
+        return $this->render('firstBundle:Default:event.html.twig');
     }
 }
+  

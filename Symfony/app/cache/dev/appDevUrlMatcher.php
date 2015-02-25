@@ -141,13 +141,22 @@ class appDevUrlMatcher extends Symfony\Bundle\FrameworkBundle\Routing\Redirectab
         }
 
         // first_homepage
-        if ($pathinfo === '/first') {
+        if (rtrim($pathinfo, '/') === '') {
+            if (substr($pathinfo, -1) !== '/') {
+                return $this->redirect($pathinfo.'/', 'first_homepage');
+            }
+
             return array (  '_controller' => 'firstBundle\\Controller\\DefaultController::indexAction',  '_route' => 'first_homepage',);
         }
 
-        // first_page1
-        if ($pathinfo === '/page1') {
-            return array (  '_controller' => 'firstBundle\\Controller\\DefaultController::plopAction',  '_route' => 'first_page1',);
+        // first_contact
+        if ($pathinfo === '/contact') {
+            return array (  '_controller' => 'firstBundle\\Controller\\DefaultController::contactAction',  '_route' => 'first_contact',);
+        }
+
+        // first_event
+        if ($pathinfo === '/event') {
+            return array (  '_controller' => 'firstBundle\\Controller\\DefaultController::eventAction',  '_route' => 'first_event',);
         }
 
         // plop_homepage
