@@ -27,22 +27,22 @@ class __TwigTemplate_3c1687434b416bdeee113aa533cc2d0bdff443d81ddfa804e435e56e87d
 ";
         // line 4
         $this->displayBlock('head', $context, $blocks);
-        // line 41
+        // line 36
         echo "
 ";
-        // line 42
+        // line 37
         $this->displayBlock('navbar', $context, $blocks);
-        // line 518
+        // line 513
         echo "
 ";
-        // line 519
+        // line 514
         $this->displayBlock('body', $context, $blocks);
-        // line 521
+        // line 516
         echo "
 ";
-        // line 522
+        // line 517
         $this->displayBlock('footer', $context, $blocks);
-        // line 531
+        // line 526
         echo "
 
 
@@ -106,12 +106,7 @@ class __TwigTemplate_3c1687434b416bdeee113aa533cc2d0bdff443d81ddfa804e435e56e87d
         }
         unset($context["asset_url"]);
         // line 19
-        echo "\t    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
-\t    <!--[if lt IE 9]>
-\t      <script src=\"../bower_components/html5shiv/dist/html5shiv.js\"></script>
-\t      <script src=\"../bower_components/respond/dest/respond.min.js\"></script>
-\t    <![endif]-->
-\t    <script>
+        echo "\t    <script>
 
 \t     var _gaq = _gaq || [];
 \t      _gaq.push(['_setAccount', 'UA-23019901-1']);
@@ -138,10 +133,10 @@ class __TwigTemplate_3c1687434b416bdeee113aa533cc2d0bdff443d81ddfa804e435e56e87d
       ";
     }
 
-    // line 42
+    // line 37
     public function block_navbar($context, array $blocks = array())
     {
-        // line 43
+        // line 38
         echo "    <div class=\"container\">
       <div class=\"bs-docs-section clearfix\">
         <div class=\"row\">
@@ -619,15 +614,15 @@ aWZ5ADIwMTUtMDItMjVUMjE6MDM6MDkrMDA6MDDYK7hrAAAAAElFTkSuQmCC\">
 ";
     }
 
-    // line 519
+    // line 514
     public function block_body($context, array $blocks = array())
     {
     }
 
-    // line 522
+    // line 517
     public function block_footer($context, array $blocks = array())
     {
-        // line 523
+        // line 518
         echo "<hr>
 \t<div class=\"container\" id=\"footer\">
 \t      <footer>
@@ -645,6 +640,6 @@ aWZ5ADIwMTUtMDItMjVUMjE6MDM6MDkrMDA6MDDYK7hrAAAAAElFTkSuQmCC\">
 
     public function getDebugInfo()
     {
-        return array (  631 => 523,  628 => 522,  623 => 519,  145 => 43,  142 => 42,  137 => 8,  134 => 7,  109 => 19,  95 => 17,  90 => 16,  76 => 14,  72 => 13,  67 => 10,  65 => 7,  61 => 5,  58 => 4,  46 => 531,  44 => 522,  41 => 521,  39 => 519,  36 => 518,  34 => 42,  31 => 41,  29 => 4,  24 => 1,);
+        return array (  626 => 518,  623 => 517,  618 => 514,  140 => 38,  137 => 37,  132 => 8,  129 => 7,  109 => 19,  95 => 17,  90 => 16,  76 => 14,  72 => 13,  67 => 10,  65 => 7,  61 => 5,  58 => 4,  46 => 526,  44 => 517,  41 => 516,  39 => 514,  36 => 513,  34 => 37,  31 => 36,  29 => 4,  24 => 1,);
     }
 }

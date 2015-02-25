@@ -67,8 +67,8 @@ class __TwigTemplate_b28d8098be7465d80f6f82b362665a3e240c5ac554a48e4146da2e9f5c5
     {
         // line 18
         echo "        <div class=\"container\">
-        <h2>Contact</h1>
-    \t<h3>Par mail</h2>
+        <h2>Contact</h2>
+    \t<h3>Par mail</h3>
 \t        <div class=\"bs-docs-section\">
 \t            <form class=\"form-horizontal\">
 \t                <div class=\"row\">
@@ -103,14 +103,20 @@ class __TwigTemplate_b28d8098be7465d80f6f82b362665a3e240c5ac554a48e4146da2e9f5c5
                     </div>
 \t            </form>
 \t        </div>
+\t        </br>
+\t    <h3>Par courrier</h2>
+\t        <div class=\"bs-docs-section\">
+\t            <h4>Adresse 72000 le Mans - association Asimov</h4>
+\t        </div>
+
         </div>
 ";
     }
 
-    // line 58
+    // line 64
     public function block_footer($context, array $blocks = array())
     {
-        // line 59
+        // line 65
         $this->displayParentBlock("footer", $context, $blocks);
         echo "
 ";
@@ -128,6 +134,6 @@ class __TwigTemplate_b28d8098be7465d80f6f82b362665a3e240c5ac554a48e4146da2e9f5c5
 
     public function getDebugInfo()
     {
-        return array (  114 => 59,  111 => 58,  69 => 18,  66 => 17,  60 => 12,  57 => 11,  51 => 8,  48 => 7,  43 => 4,  40 => 3,  11 => 1,);
+        return array (  120 => 65,  117 => 64,  69 => 18,  66 => 17,  60 => 12,  57 => 11,  51 => 8,  48 => 7,  43 => 4,  40 => 3,  11 => 1,);
     }
 }

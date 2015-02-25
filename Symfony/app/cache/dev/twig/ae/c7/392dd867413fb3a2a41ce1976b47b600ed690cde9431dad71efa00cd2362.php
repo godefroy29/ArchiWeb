@@ -66,14 +66,16 @@ class __TwigTemplate_aec7392dd867413fb3a2a41ce1976b47b600ed690cde9431dad71efa00c
     public function block_body($context, array $blocks = array())
     {
         // line 16
-        echo "<h1>A compléter</h1>
+        echo "<div class=\"container\">
+<h1>A compléter</h1>
+</div>
 ";
     }
 
-    // line 19
+    // line 21
     public function block_footer($context, array $blocks = array())
     {
-        // line 20
+        // line 22
         $this->displayParentBlock("footer", $context, $blocks);
         echo "
 ";
@@ -91,6 +93,6 @@ class __TwigTemplate_aec7392dd867413fb3a2a41ce1976b47b600ed690cde9431dad71efa00c
 
     public function getDebugInfo()
     {
-        return array (  77 => 20,  74 => 19,  69 => 16,  66 => 15,  60 => 12,  57 => 11,  51 => 8,  48 => 7,  43 => 4,  40 => 3,  11 => 1,);
+        return array (  79 => 22,  76 => 21,  69 => 16,  66 => 15,  60 => 12,  57 => 11,  51 => 8,  48 => 7,  43 => 4,  40 => 3,  11 => 1,);
     }
 }
