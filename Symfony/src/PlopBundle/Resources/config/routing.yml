@@ -1,0 +1,3 @@
+plop_homepage:
+    path:     /hello/{name}
+    defaults: { _controller: PlopBundle:Default:index }

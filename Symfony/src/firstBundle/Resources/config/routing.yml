@@ -1,0 +1,9 @@
+first_homepage:
+    path:     /first
+    defaults: { _controller: firstBundle:Default:index }
+
+first_page1:
+    path:     /page1
+    defaults: { _controller: firstBundle:Default:plop }
+
+

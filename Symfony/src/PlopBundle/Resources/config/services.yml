@@ -1,0 +1,4 @@
+services:
+#    plop.example:
+#        class: PlopBundle\Example
+#        arguments: [@service_id, "plain_value", %parameter%]
