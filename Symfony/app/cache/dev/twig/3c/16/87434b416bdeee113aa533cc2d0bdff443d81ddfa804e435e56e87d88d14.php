@@ -32,17 +32,17 @@ class __TwigTemplate_3c1687434b416bdeee113aa533cc2d0bdff443d81ddfa804e435e56e87d
 ";
         // line 37
         $this->displayBlock('navbar', $context, $blocks);
-        // line 513
-        echo "
-";
         // line 514
-        $this->displayBlock('body', $context, $blocks);
-        // line 516
         echo "
 ";
+        // line 515
+        $this->displayBlock('body', $context, $blocks);
         // line 517
+        echo "
+";
+        // line 518
         $this->displayBlock('footer', $context, $blocks);
-        // line 526
+        // line 527
         echo "
 
 
@@ -602,6 +602,7 @@ aWZ5ADIwMTUtMDItMjVUMjE6MDM6MDkrMDA6MDDYK7hrAAAAAElFTkSuQmCC\">
                       <li><a href=\"event\">Evenement</a></li>
                       <li><a href=\"contact\">Contact</a></li>
                       <li><a href=\"infos\">Infos</a></li>
+                      <li><a href=\"rules\">Réglement</a></li>
                     </ul>
                   </div>
                 </div>
@@ -614,15 +615,15 @@ aWZ5ADIwMTUtMDItMjVUMjE6MDM6MDkrMDA6MDDYK7hrAAAAAElFTkSuQmCC\">
 ";
     }
 
-    // line 514
+    // line 515
     public function block_body($context, array $blocks = array())
     {
     }
 
-    // line 517
+    // line 518
     public function block_footer($context, array $blocks = array())
     {
-        // line 518
+        // line 519
         echo "<hr>
 \t<div class=\"container\" id=\"footer\">
 \t      <footer>
@@ -640,6 +641,6 @@ aWZ5ADIwMTUtMDItMjVUMjE6MDM6MDkrMDA6MDDYK7hrAAAAAElFTkSuQmCC\">
 
     public function getDebugInfo()
     {
-        return array (  626 => 518,  623 => 517,  618 => 514,  140 => 38,  137 => 37,  132 => 8,  129 => 7,  109 => 19,  95 => 17,  90 => 16,  76 => 14,  72 => 13,  67 => 10,  65 => 7,  61 => 5,  58 => 4,  46 => 526,  44 => 517,  41 => 516,  39 => 514,  36 => 513,  34 => 37,  31 => 36,  29 => 4,  24 => 1,);
+        return array (  627 => 519,  624 => 518,  619 => 515,  140 => 38,  137 => 37,  132 => 8,  129 => 7,  109 => 19,  95 => 17,  90 => 16,  76 => 14,  72 => 13,  67 => 10,  65 => 7,  61 => 5,  58 => 4,  46 => 527,  44 => 518,  41 => 517,  39 => 515,  36 => 514,  34 => 37,  31 => 36,  29 => 4,  24 => 1,);
     }
 }

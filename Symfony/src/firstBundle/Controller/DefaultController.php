@@ -25,5 +25,10 @@ class DefaultController extends Controller
     {
         return $this->render('firstBundle:Default:infos.html.twig');
     }
+
+    public function rulesAction()
+    {
+        return $this->render('firstBundle:Default:rules.html.twig');
+    }
 }
   

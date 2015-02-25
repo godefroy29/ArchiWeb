@@ -13,3 +13,8 @@ first_event:
 first_infos:
     path:     /infos
     defaults: { _controller: firstBundle:Default:infos }
+
+first_rules:
+    path:     /rules
+    defaults: { _controller: firstBundle:Default:rules }
+

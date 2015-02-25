@@ -177,6 +177,11 @@ class appDevUrlMatcher extends Symfony\Bundle\FrameworkBundle\Routing\Redirectab
             return array (  '_controller' => 'firstBundle\\Controller\\DefaultController::infosAction',  '_route' => 'first_infos',);
         }
 
+        // first_rules
+        if ($pathinfo === '/rules') {
+            return array (  '_controller' => 'firstBundle\\Controller\\DefaultController::rulesAction',  '_route' => 'first_rules',);
+        }
+
         // plop_homepage
         if (0 === strpos($pathinfo, '/hello') && preg_match('#^/hello/(?P<name>[^/]++)$#s', $pathinfo, $matches)) {
             return $this->mergeDefaults(array_replace($matches, array('_route' => 'plop_homepage')), array (  '_controller' => 'PlopBundle\\Controller\\DefaultController::indexAction',));
