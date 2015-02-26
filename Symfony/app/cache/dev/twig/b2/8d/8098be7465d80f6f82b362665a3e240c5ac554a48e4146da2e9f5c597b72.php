@@ -66,57 +66,65 @@ class __TwigTemplate_b28d8098be7465d80f6f82b362665a3e240c5ac554a48e4146da2e9f5c5
     public function block_body($context, array $blocks = array())
     {
         // line 18
-        echo "        <div class=\"container\">
+        echo "    <div class=\"container\">
         <h2>Contact</h2>
+
     \t<h3>Par mail</h3>
-\t        <div class=\"bs-docs-section\">
-\t            <form class=\"form-horizontal\">
-\t                <div class=\"row\">
-\t                    <div class=\"col-md-4\">
-\t                      <div class=\"form-group\">
-\t                        <label for=\"title\" class=\"required\">Votre email</label>
+        <div class=\"bs-docs-section\">
+            <form class=\"form-horizontal\">
+                <div class=\"row\">
+                    <div class=\"col-md-4\">
+\t                    <div class=\"form-group\">
+\t                    \t<label for=\"title\" class=\"required\">Votre email *</label>
 \t                        <input type=\"email\" class=\"form-control\" id=\"title\" placeholder=\"Votre email\" required>
-\t                      </div>
 \t                    </div>
-\t                    <div class=\"col-md-1\">
-\t                    </div>
-\t                    <div class=\"col-md-7\">
-\t                      <div class=\"form-group\">
-\t                        <label for=\"subject\" class=\"required\">Sujet</label>
-\t                        <input type=\"text\" class=\"form-control\" id=\"subject\" placeholder=\"Sujet du message\" required>
-\t                      </div>
-\t                    </div>
-\t                </div>
-\t                <div class=\"row\">
-\t                    <div class=\"col-md-12\">
-\t                        <div class=\"form-group\">
-
-\t                          <label for=\"body\" class=\"required\">Message</label>
-\t                          <textarea class=\"form-control\" rows=\"3\" id=\"body\" placeholder=\"Message\" required></textarea>
-
-\t                        </div>
-\t                    </div>
-\t                </div>
-\t                <div class=\"col-lg-10 col-lg-offset-2\">
-                      <button type=\"reset\" class=\"btn btn-default\">Cancel</button>
-                      <button type=\"submit\" class=\"btn btn-primary\">Submit</button>
                     </div>
-\t            </form>
-\t        </div>
-\t        </br>
-\t    <h3>Par courrier</h2>
-\t        <div class=\"bs-docs-section\">
-\t            <h4>Adresse 72000 le Mans - association Asimov</h4>
-\t        </div>
-
+                    <div class=\"col-md-1\">
+                    </div>
+                    <div class=\"col-md-7\">
+                      \t<div class=\"form-group\">
+\t                        <label for=\"subject\" class=\"required\">Sujet *</label>
+\t                        <input type=\"text\" class=\"form-control\" id=\"subject\" placeholder=\"Sujet du message\" required>
+                      \t</div>
+                    </div>
+                </div>
+                <div class=\"row\">
+                    <div class=\"col-md-12\">
+                        <div class=\"form-group\">
+                          \t<label for=\"body\" class=\"required\">Message *</label>
+                          \t<textarea class=\"form-control\" rows=\"3\" id=\"body\" placeholder=\"Message\" required></textarea>
+                        </div>
+                    </div>
+                </div>
+                <div class=\"col-lg-10 col-lg-offset-2\">
+                    <button type=\"reset\" class=\"btn btn-default\">Cancel</button>
+                    <button type=\"submit\" class=\"btn btn-primary\">Submit</button>
+                </div>
+            </form>
         </div>
+        </br>
+
+        <hr style=\"border: 1px dashed;\">
+    \t<h3>Par courrier</h2>
+        <div class=\"bs-docs-section\">
+            <h4>Adresse 72000 le Mans - association Asimov</h4>
+        </div>
+
+        <hr style=\"border: 1px dashed;\">
+        <h3>Au local d'ASIMOV</h3>
+        <div class=\"bs-docs-section\">
+        \t<h4>Salle Association</h4>
+        \t<iframe src=\"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2668.7630777031422!2d0.16095100000000997!3d48.01828699999999!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e2861f2aac5551%3A0x9c9c1ad436c888d7!2sD%C3%A9partement+Informatique!5e0!3m2!1sfr!2sfr!4v1424986811675\" width=\"600\" height=\"450\" frameborder=\"0\" style=\"border:0\">
+        \t</iframe>
+    \t</div>
+    </div>
 ";
     }
 
-    // line 64
+    // line 72
     public function block_footer($context, array $blocks = array())
     {
-        // line 65
+        // line 73
         $this->displayParentBlock("footer", $context, $blocks);
         echo "
 ";
@@ -134,6 +142,6 @@ class __TwigTemplate_b28d8098be7465d80f6f82b362665a3e240c5ac554a48e4146da2e9f5c5
 
     public function getDebugInfo()
     {
-        return array (  120 => 65,  117 => 64,  69 => 18,  66 => 17,  60 => 12,  57 => 11,  51 => 8,  48 => 7,  43 => 4,  40 => 3,  11 => 1,);
+        return array (  128 => 73,  125 => 72,  69 => 18,  66 => 17,  60 => 12,  57 => 11,  51 => 8,  48 => 7,  43 => 4,  40 => 3,  11 => 1,);
     }
 }

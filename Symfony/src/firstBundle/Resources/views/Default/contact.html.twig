@@ -15,50 +15,58 @@
 
     
 {% block body %}
-        <div class="container">
+    <div class="container">
         <h2>Contact</h2>
+
     	<h3>Par mail</h3>
-	        <div class="bs-docs-section">
-	            <form class="form-horizontal">
-	                <div class="row">
-	                    <div class="col-md-4">
-	                      <div class="form-group">
-	                        <label for="title" class="required">Votre email</label>
+        <div class="bs-docs-section">
+            <form class="form-horizontal">
+                <div class="row">
+                    <div class="col-md-4">
+	                    <div class="form-group">
+	                    	<label for="title" class="required">Votre email *</label>
 	                        <input type="email" class="form-control" id="title" placeholder="Votre email" required>
-	                      </div>
 	                    </div>
-	                    <div class="col-md-1">
-	                    </div>
-	                    <div class="col-md-7">
-	                      <div class="form-group">
-	                        <label for="subject" class="required">Sujet</label>
-	                        <input type="text" class="form-control" id="subject" placeholder="Sujet du message" required>
-	                      </div>
-	                    </div>
-	                </div>
-	                <div class="row">
-	                    <div class="col-md-12">
-	                        <div class="form-group">
-
-	                          <label for="body" class="required">Message</label>
-	                          <textarea class="form-control" rows="3" id="body" placeholder="Message" required></textarea>
-
-	                        </div>
-	                    </div>
-	                </div>
-	                <div class="col-lg-10 col-lg-offset-2">
-                      <button type="reset" class="btn btn-default">Cancel</button>
-                      <button type="submit" class="btn btn-primary">Submit</button>
                     </div>
-	            </form>
-	        </div>
-	        </br>
-	    <h3>Par courrier</h2>
-	        <div class="bs-docs-section">
-	            <h4>Adresse 72000 le Mans - association Asimov</h4>
-	        </div>
-
+                    <div class="col-md-1">
+                    </div>
+                    <div class="col-md-7">
+                      	<div class="form-group">
+	                        <label for="subject" class="required">Sujet *</label>
+	                        <input type="text" class="form-control" id="subject" placeholder="Sujet du message" required>
+                      	</div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="form-group">
+                          	<label for="body" class="required">Message *</label>
+                          	<textarea class="form-control" rows="3" id="body" placeholder="Message" required></textarea>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-10 col-lg-offset-2">
+                    <button type="reset" class="btn btn-default">Cancel</button>
+                    <button type="submit" class="btn btn-primary">Submit</button>
+                </div>
+            </form>
         </div>
+        </br>
+
+        <hr style="border: 1px dashed;">
+    	<h3>Par courrier</h2>
+        <div class="bs-docs-section">
+            <h4>Adresse 72000 le Mans - association Asimov</h4>
+        </div>
+
+        <hr style="border: 1px dashed;">
+        <h3>Au local d'ASIMOV</h3>
+        <div class="bs-docs-section">
+        	<h4>Salle Association</h4>
+        	<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2668.7630777031422!2d0.16095100000000997!3d48.01828699999999!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e2861f2aac5551%3A0x9c9c1ad436c888d7!2sD%C3%A9partement+Informatique!5e0!3m2!1sfr!2sfr!4v1424986811675" width="600" height="450" frameborder="0" style="border:0">
+        	</iframe>
+    	</div>
+    </div>
 {% endblock %}
 
 {% block footer %}
