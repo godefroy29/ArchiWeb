@@ -31,17 +31,17 @@ class __TwigTemplate_3c1687434b416bdeee113aa533cc2d0bdff443d81ddfa804e435e56e87d
 ";
         // line 37
         $this->displayBlock('navbar', $context, $blocks);
-        // line 514
-        echo "
-";
         // line 515
-        $this->displayBlock('body', $context, $blocks);
-        // line 517
         echo "
 ";
+        // line 516
+        $this->displayBlock('body', $context, $blocks);
         // line 518
+        echo "
+";
+        // line 519
         $this->displayBlock('footer', $context, $blocks);
-        // line 526
+        // line 527
         echo "<script src=\"https://code.jquery.com/jquery-1.10.2.min.js\"></script>
 </html>";
     }
@@ -597,6 +597,7 @@ class __TwigTemplate_3c1687434b416bdeee113aa533cc2d0bdff443d81ddfa804e435e56e87d
 \t\t\t\t\t\t                      <li><a href=\"contact\">Contact</a></li>
 \t\t\t\t\t\t                      <li><a href=\"infos\">Infos</a></li>
 \t\t\t\t\t\t                      <li><a href=\"rules\">Réglement</a></li>
+\t\t\t\t\t\t                      <li><a href=\"register\">Inscription</a></li>
 \t\t\t\t\t                    </ul>
 \t\t\t\t                  </div>
 \t\t                \t</div>
@@ -609,15 +610,15 @@ class __TwigTemplate_3c1687434b416bdeee113aa533cc2d0bdff443d81ddfa804e435e56e87d
 ";
     }
 
-    // line 515
+    // line 516
     public function block_body($context, array $blocks = array())
     {
     }
 
-    // line 518
+    // line 519
     public function block_footer($context, array $blocks = array())
     {
-        // line 519
+        // line 520
         echo "\t<hr>
 \t<div class=\"container\" id=\"footer\">
 \t    <footer>
@@ -634,6 +635,6 @@ class __TwigTemplate_3c1687434b416bdeee113aa533cc2d0bdff443d81ddfa804e435e56e87d
 
     public function getDebugInfo()
     {
-        return array (  621 => 519,  618 => 518,  613 => 515,  134 => 38,  131 => 37,  126 => 8,  123 => 7,  105 => 21,  91 => 19,  87 => 18,  84 => 17,  70 => 15,  66 => 14,  60 => 10,  58 => 7,  53 => 4,  50 => 3,  45 => 526,  43 => 518,  40 => 517,  38 => 515,  35 => 514,  33 => 37,  30 => 36,  28 => 3,  24 => 1,);
+        return array (  622 => 520,  619 => 519,  614 => 516,  134 => 38,  131 => 37,  126 => 8,  123 => 7,  105 => 21,  91 => 19,  87 => 18,  84 => 17,  70 => 15,  66 => 14,  60 => 10,  58 => 7,  53 => 4,  50 => 3,  45 => 527,  43 => 519,  40 => 518,  38 => 516,  35 => 515,  33 => 37,  30 => 36,  28 => 3,  24 => 1,);
     }
 }

@@ -30,5 +30,10 @@ class DefaultController extends Controller
     {
         return $this->render('firstBundle:Default:rules.html.twig');
     }
+
+    public function registerAction()
+    {
+        return $this->render('firstBundle:Default:register.html.twig');
+    }
 }
   

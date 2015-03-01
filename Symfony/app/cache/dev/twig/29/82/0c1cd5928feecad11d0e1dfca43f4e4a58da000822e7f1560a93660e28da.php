@@ -69,15 +69,25 @@ class __TwigTemplate_29820c1cd5928feecad11d0e1dfca43f4e4a58da000822e7f1560a93660
         echo "<div class=\"container\">
 \t<section class=\"info\">
 \t    <h1>Infos</h1>
+\t    \t<h2>Le bureau</h2>
+\t    \t\t<p>Godefroy Poirier : Président</br>
+\t    \t\tWilfried Jousse : Secrétaire</br>
+\t    \t\tAntoine Mesnil : Trésorier</br>
+\t    \t\tManuel Bouvier : 1er Vice-Président</br>
+\t    \t\tKevin Demaret : Vice-Président en charge de l'animation</br>
+\t    \t\tEtienne Offredi : Vice-Président en charge de la communication</p>
+
+\t    \t<h2>La cafétaria</h2>
+\t    \t\t<p>Tarifs prochainement disponibles</p>
 \t</section>
 </div>
 ";
     }
 
-    // line 23
+    // line 33
     public function block_footer($context, array $blocks = array())
     {
-        // line 24
+        // line 34
         $this->displayParentBlock("footer", $context, $blocks);
         echo "
 ";
@@ -95,6 +105,6 @@ class __TwigTemplate_29820c1cd5928feecad11d0e1dfca43f4e4a58da000822e7f1560a93660
 
     public function getDebugInfo()
     {
-        return array (  81 => 24,  78 => 23,  69 => 16,  66 => 15,  60 => 12,  57 => 11,  51 => 8,  48 => 7,  43 => 4,  40 => 3,  11 => 1,);
+        return array (  91 => 34,  88 => 33,  69 => 16,  66 => 15,  60 => 12,  57 => 11,  51 => 8,  48 => 7,  43 => 4,  40 => 3,  11 => 1,);
     }
 }

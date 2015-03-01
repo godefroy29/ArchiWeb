@@ -17,3 +17,7 @@ first_infos:
 first_rules:
     path:     /rules
     defaults: { _controller: firstBundle:Default:rules }
+
+first_register:
+    path:     /register
+    defaults: { _controller: firstBundle:Default:register }
