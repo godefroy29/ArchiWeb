@@ -3,12 +3,25 @@
 namespace firstBundle\Controller;
 
 use Symfony\Bundle\FrameworkBundle\Controller\Controller;
+use Symfony\Component\HttpFoundation\Request;
 
 class DefaultController extends Controller
 {
-    public function indexAction()
+    public function indexAction(Request $request)
     {
-        return $this->render('firstBundle:Default:index.html.twig');
+        $form = $this->createFormBuilder()
+            ->add('mail', 'email')
+            ->add('sujet', 'text')
+            ->add('save', 'submit')
+            ->getForm();
+        return $this->render('firstBundle:Default:index.html.twig', array(
+            'form' => $form->createView(),
+        ));
+
+        if ($form->isValid()) {
+            $request->getSession()->getFlashBag()->add('notice', 'mail envoyé');
+            return $this->redirect($this->generateUrl('/'));
+        }
     }
 
     public function contactAction()
@@ -36,4 +49,3 @@ class DefaultController extends Controller
         return $this->render('firstBundle:Default:register.html.twig');
     }
 }
-  
