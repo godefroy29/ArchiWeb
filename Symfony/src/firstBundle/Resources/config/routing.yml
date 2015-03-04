@@ -21,3 +21,7 @@ first_rules:
 first_register:
     path:     /register
     defaults: { _controller: firstBundle:Default:register }
+
+first_test:
+    path:     /test
+    defaults: { _controller: firstBundle:Default:test }

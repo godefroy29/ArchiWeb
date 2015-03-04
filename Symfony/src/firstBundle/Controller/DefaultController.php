@@ -5,23 +5,15 @@ namespace firstBundle\Controller;
 use Symfony\Bundle\FrameworkBundle\Controller\Controller;
 use Symfony\Component\HttpFoundation\Request;
 
+use firstBundle\Entity\Enquiry;
+use firstBundle\Form\EnquiryType;
+
+
 class DefaultController extends Controller
 {
-    public function indexAction(Request $request)
+    public function indexAction()
     {
-        $form = $this->createFormBuilder()
-            ->add('mail', 'email')
-            ->add('sujet', 'text')
-            ->add('save', 'submit')
-            ->getForm();
-        return $this->render('firstBundle:Default:index.html.twig', array(
-            'form' => $form->createView(),
-        ));
-
-        if ($form->isValid()) {
-            $request->getSession()->getFlashBag()->add('notice', 'mail envoyé');
-            return $this->redirect($this->generateUrl('/'));
-        }
+        return $this->render('firstBundle:Default:index.html.twig');
     }
 
     public function contactAction()
@@ -47,5 +39,34 @@ class DefaultController extends Controller
     public function registerAction()
     {
         return $this->render('firstBundle:Default:register.html.twig');
+    }
+
+    public function testAction()
+    {
+        $enquiry = new Enquiry();
+        $form = $this->createForm(new EnquiryType(), $enquiry);
+
+        $request = $this->getRequest();
+        if ($request->getMethod() == 'POST') {
+            $form->handleRequest($request);
+
+            if ($form->isValid()) {
+                $data = $form->getData();
+                $message = \Swift_Message::newInstance()
+                    ->setSubject($data->getSubject())
+                    ->setFrom($data->getEmail())
+                    ->setTo('godefroy.29@gmail.com')
+                    ->setBody("Email => ".$data->getEmail()." name => ".$data->getName()."|".$data->getBody());
+                    //->setBody($this->renderView('firstBundle:Default:test.html.twig', array('enquiry' => $enquiry)));
+                $this->get('mailer')->send($message);
+                
+                //$this->get('session')->setFlash('blogger-notice', 'Your contact enquiry was successfully sent. Thank you!');
+                return $this->redirect($this->generateUrl('first_homepage'));
+            }
+        }
+
+        return $this->render('firstBundle:Default:test.html.twig', array(
+            'form' => $form->createView()
+        ));
     }
 }

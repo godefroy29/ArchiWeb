@@ -1,0 +1,37 @@
+{% extends 'firstBundle:Default:base.html.twig' %}
+
+{% block title %}
+	<title>Test</title>
+{% endblock %}
+
+{% block head %}
+{{ parent() }}
+{% endblock %}
+
+{% block navbar %}
+{{ parent() }}
+{% endblock %}
+
+
+{% block body %}
+<div class="container">
+<h1>Test Formulaire mail</h1>
+	<form action="{{ path('first_test') }}" method="post" {{ form_enctype(form) }}>
+	        {{ form_errors(form) }}
+
+	        {{ form_row(form.name) }}
+	        {{ form_row(form.email) }}
+	        {{ form_row(form.subject) }}
+	        {{ form_row(form.body) }}
+
+	        {{ form_rest(form) }}
+
+	        <input type="submit" value="Envoyer" />
+	        <input type="reset" value="Reset"/>
+	</form>
+</div>
+{% endblock %}
+
+{% block footer %}
+{{ parent() }}
+{% endblock %}
